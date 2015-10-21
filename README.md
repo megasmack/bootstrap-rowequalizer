@@ -15,7 +15,7 @@ Just load the script before the end of `body` tag and call the script using a se
 	$(selector).rowequalizer(columns);
 ```
 
-NOTE: You may want to avoid selecting the class `row` as it may affect grids you may not want cleared. I suggest adding a class spiecifically for clearing. Like `row-eq` for eaxample.
+NOTE: You may want to avoid selecting the class `row` as it may affect grids you may not want cleared. I suggest adding a class specifically for clearing. Like `row-eq` for eaxample.
 
 ## Example
 
@@ -99,5 +99,5 @@ So now if you have uneven content in your columns and have multiple column sizes
 ## Known Issues
 
 - This will only work with Bootstraps default class names. If you are making your own class names via LESS or SASS, you’ll need to find other means of clearing rows.
-- I'm assuming Bootstrap 4’s Flexbox support may make this script obsolete. At the time of writting this, I haven't had a chance to work with Bootstrap 4 to see if this is the case. Given that there are new breakpoints in Bootstrap 4, I can say this script won't work at this time.
+- I'm assuming Bootstrap 4’s Flexbox support may make this script obsolete. At the time of writing this, I haven't had a chance to work with Bootstrap 4 to see if this is the case. Given that there are new breakpoints in Bootstrap 4, I can say this script won't work at this time.
 - May support older versions of jQuery. Untested.
