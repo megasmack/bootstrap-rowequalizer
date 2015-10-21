@@ -98,10 +98,10 @@ So now if you have uneven content in your columns and have multiple column sizes
 
 ## Notes
 
-- If you need the column heights to be equal (for different background colors for example), checkout [Bootstrap ColEqualizer](https://github.com/gsmke/bootstrap-colequalizer). Instead of clearing "rows", it can make all of the col elements heights equal.
+- If you need the column heights to be equal (for different background colors for example), checkout [Bootstrap ColEqualizer](https://github.com/gsmke/bootstrap-colequalizer). Instead of clearing "rows", it can make all of the `col` elements heights equal.
 
 ## Known Issues
 
-- This will only work with Bootstraps default class names. If you are making your own class names via LESS or SASS, you’ll need to find other means of clearing rows.
-- I'm assuming Bootstrap 4’s Flexbox support may make this script obsolete. At the time of writing this, I haven't had a chance to work with Bootstrap 4 to see if this is the case. Given that there are new breakpoints in Bootstrap 4, I can say this script won't work at this time.
+- This will only work with Bootstrap’s default class names. If you are making your own class names via LESS or SASS, you’ll need to find other means of clearing rows.
+- I'm assuming Bootstrap 4’s Flexbox support may make this script obsolete. At the time of writing this, I haven't had a chance to work with Bootstrap 4 to see if this is the case. Given that there are new breakpoints in Bootstrap 4, I can say this script likely won't work at this time.
 - May support older versions of jQuery. Untested.
