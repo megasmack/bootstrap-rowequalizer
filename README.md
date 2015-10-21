@@ -1,4 +1,4 @@
-# bootstrap-rowequalizer
+# Bootstrap RowEqualizer
 
 A jQuery plugin that dynamically clears rows with uneven columns in Bootstrap 3 grids.
 
@@ -9,13 +9,13 @@ A jQuery plugin that dynamically clears rows with uneven columns in Bootstrap 3 
 
 ## Usage
 
-Just load the script before the end of `body` tag and call the script using a selector on your Bootstrap row. You can optionally pass the column count if you have customized your columns (default is `12`):
+Just load the script before the end of `body` tag and call the script using a selector on your Bootstrap row. You can optionally pass the column count if you have customized your columns. The default is `12`.
 
 ```javascript
 	$(selector).rowequalizer(columns);
 ```
 
-NOTE: You may want to avoid selecting the class `row` as it may affect grids you may not want cleared. I suggest adding a class specifically for clearing. Like `row-eq` for eaxample.
+NOTE: You may want to avoid selecting the class `row` as it may affect grids you may not want cleared. I suggest adding a class specifically for clearing. Like `row-eq` for example.
 
 ## Example
 
@@ -96,8 +96,12 @@ Which will output this in the browser:
 
 So now if you have uneven content in your columns and have multiple column sizes, you can still clear each of them as though they’re a row.
 
+## Notes
+
+- If you need the column heights to be equal (for different background colors for example), checkout [Bootstrap ColEqualizer](https://github.com/gsmke/bootstrap-colequalizer). Instead of clearing "rows", it can make all of the `col` elements heights equal.
+
 ## Known Issues
 
-- This will only work with Bootstraps default class names. If you are making your own class names via LESS or SASS, you’ll need to find other means of clearing rows.
-- I'm assuming Bootstrap 4’s Flexbox support may make this script obsolete. At the time of writing this, I haven't had a chance to work with Bootstrap 4 to see if this is the case. Given that there are new breakpoints in Bootstrap 4, I can say this script won't work at this time.
+- This will only work with Bootstrap’s default class names. If you are making your own class names via LESS or SASS, you’ll need to find other means of clearing rows.
+- I'm assuming Bootstrap 4’s Flexbox support may make this script obsolete. At the time of writing this, I haven't had a chance to work with Bootstrap 4 to see if this is the case. Given that there are new breakpoints in Bootstrap 4, I can say this script likely won't work at this time.
 - May support older versions of jQuery. Untested.
