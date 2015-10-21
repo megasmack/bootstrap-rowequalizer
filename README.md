@@ -1,4 +1,4 @@
-# bootstrap-rowequalizer
+# Bootstrap RowEqualizer
 
 A jQuery plugin that dynamically clears rows with uneven columns in Bootstrap 3 grids.
 
@@ -9,13 +9,13 @@ A jQuery plugin that dynamically clears rows with uneven columns in Bootstrap 3 
 
 ## Usage
 
-Just load the script before the end of `body` tag and call the script using a selector on your Bootstrap row. You can optionally pass the column count if you have customized your columns (default is `12`):
+Just load the script before the end of `body` tag and call the script using a selector on your Bootstrap row. You can optionally pass the column count if you have customized your columns. The default is `12`.
 
 ```javascript
 	$(selector).rowequalizer(columns);
 ```
 
-NOTE: You may want to avoid selecting the class `row` as it may affect grids you may not want cleared. I suggest adding a class specifically for clearing. Like `row-eq` for eaxample.
+NOTE: You may want to avoid selecting the class `row` as it may affect grids you may not want cleared. I suggest adding a class specifically for clearing. Like `row-eq` for example.
 
 ## Example
 
@@ -95,6 +95,10 @@ Which will output this in the browser:
 ```
 
 So now if you have uneven content in your columns and have multiple column sizes, you can still clear each of them as though they’re a row.
+
+## Notes
+
+- If you need the column heights to be equal (for different background colors for example), checkout [Bootstrap ColEqualizer](https://github.com/gsmke/bootstrap-colequalizer). Instead of clearing "rows", it can make all of the col elements heights equal.
 
 ## Known Issues
 

@@ -21,6 +21,7 @@
     var RowEqualizer = window.RowEqualizer || {};
 
     RowEqualizer = (function () {
+
         function RowEqualizer(element, settings) {
 
             var _ = this;
@@ -69,25 +70,25 @@
         _.colCount = 0;
 
         $('> [class*=col-'+ colType +']',_.el).each(function (i,e) {
-                var colNumber = 0;
-                var classList = ($(e).attr('class')).split(' ');
-                for (var x = 0; x < classList.length; x++) {
-                    if (classList[x].substr(0,6) === 'col-'+ colType) {
-                        var colStructure = classList[x].split('-');
-                        colNumber = parseInt(colStructure.pop());
-                    }
+            var colNumber = 0;
+            var classList = ($(e).attr('class')).split(' ');
+            for (var x = 0; x < classList.length; x++) {
+                if (classList[x].substr(0,6) === 'col-'+ colType) {
+                    var colStructure = classList[x].split('-');
+                    colNumber = parseInt(colStructure.pop());
                 }
-                _.colCount = _.colCount + colNumber;
-                if (_.colCount >= _.totalColumns) {
-                    if (_.colCount === _.totalColumns) {
-                        $(e).after('<div class="'+ _.buildClears(colType) +'"></div>');
-                        _.colCount = 0;
-                    } else {
-                        $(e).before('<div class="'+ _.buildClears(colType) +'"></div>');
-                        _.colCount = colNumber;
-                    }
+            }
+            _.colCount = _.colCount + colNumber;
+            if (_.colCount >= _.totalColumns) {
+                if (_.colCount === _.totalColumns) {
+                    $(e).after('<div class="'+ _.buildClears(colType) +'"></div>');
+                    _.colCount = 0;
+                } else {
+                    $(e).before('<div class="'+ _.buildClears(colType) +'"></div>');
+                    _.colCount = colNumber;
                 }
-            });
+            }
+        });
 
     };
 

@@ -1,7 +1,7 @@
 {
     "name": "bootstrap-rowequalizer",
     "main": "bootstrap-rowequalizer.js",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A jQuery plugin that dynamically clears rows with uneven columns in Bootstrap 3 grids.",
     "homepage": "https://github.com/gsmke/bootstrap-rowequalizer",
     "authors": [
@@ -16,10 +16,11 @@
     "license": "MIT",
     "ignore": [
        "**/.*",
-       ".editorconfig"
+       ".editorconfig",
+       ".jshintrc"
    ],
     "dependencies": {
-        "jquery": ">=1.11.0",
-        "bootstrap": ">=3.1.0"
+        "jquery": ">=1.11.*",
+        "bootstrap": ">=3.*"
     }
 }
