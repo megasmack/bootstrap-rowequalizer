@@ -1,7 +1,7 @@
 /* global window, module, define, jQuery, require */
 /*
- * Bootstrap RowEqualizer v1.0.0
- * https://github.com/gsmke/bootstrap-rowequalizer
+ * Bootstrap RowEqualizer v1.0.2
+ * https://github.com/megasmack/bootstrap-rowequalizer
  */
 
 ;(function(factory) {
